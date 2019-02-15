@@ -1,0 +1,312 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+body
+{
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+float: left;
+}
+
+#particles-js
+
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #E55934;
+}
+
+#equal{
+  position:absolute;
+  font-size: 50px;
+  left: 200px;
+  color: white;
+  top: -40px;
+  font-weight: lighter;
+}
+
+#mfooter{
+  background: linear-gradient(110deg, #FA7921 60%, #FA9149 60%);
+  -webkit-box-shadow: -2px -2px 22px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px -2px 22px -6px rgba(0,0,0,0.75);
+  box-shadow: -2px -2px 22px -6px rgba(0,0,0,0.75);
+  opacity: 0.75;
+}
+
+#footer{
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  max-width: 400px;
+  width: 400px;
+  height: 80px;
+  max-height: 80px;
+  top: 735px;
+  left: 320px;
+
+}
+
+#mheader{
+  background: white;
+}
+
+#header{
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 60px 115px;
+  max-width: 400px;
+  width: 400px;
+  height: 175px;
+  max-height: 175px;
+  top: 100px;
+  left: 320px;
+  background-color: white;
+  opacity: 0.95;
+
+}
+
+#side_bar{
+  background-color: #FA7921;
+}
+
+#container{
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-row-gap: 0px;
+  max-width: 400px;
+  width: 400px;
+  max-height: 460px;
+  height: 460px;
+  top: 275px;
+  left: 320px;
+}
+
+.grid-item{
+  position: relative;
+  background-color: #515364;
+  opacity: 0.95;
+}
+
+#side_bar{
+  position: relative;
+  background-color: #FA7921;
+  opacity: 0.96;
+}
+
+#theader{
+  position: absolute;
+  right: 20px;
+  top: -40px;
+  color: black;
+  font-family: 'Poiret One', cursive;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+#bheader{
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  color: #515364;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#text{
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#zero{
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#one{
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#two{
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#three{
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#four{
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#five{
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#six{
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#seven{
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+
+}
+
+
+#eight{
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#nine{
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#square_root{
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#del{
+  position: absolute;
+  top: -20px;
+  left: 28px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#one{
+  position: absolute;
+  top: -20px;
+  left: 47px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#dot{
+  position: absolute;
+  top: -29px;
+  left: 7px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+
+#divide{
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 80px;
+  font-weight: lighter;
+}
+
+#multiply{
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 80px;
+  font-weight: lighter;
+}
+
+#minus{
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+#plus{
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 70px;
+  font-weight: lighter;
