@@ -231,14 +231,14 @@ float: left;
   font-weight: lighter;
 }
 
-#square_root{
+#mod{
   position: absolute;
-  top: -10px;
-  left: 0px;
+  top: 0px;
+  left: 5px;
   color: white;
   font-family: 'Poiret One', cursive;
   font-size: 40px;
-  font-weight: lighter;
+  font-weight: bolder;
 }
 
 #del{
