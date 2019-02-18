@@ -16,8 +16,13 @@ function click(){
 
 
     function asciiCode(){
+      //note this, getting exact charcode from within textcontent instead
+      //of array
       var buttonInt = e.childNodes[1].textContent;
       var buttonChar = buttonInt.trim();
+      //gives char code of button pressed
+      console.log(buttonChar.charCodeAt())
+
       //char number of times (x) from HTML DOM
        let multiplication = 215;
       //char number of minus (-) from HTML DOM and others below.
@@ -71,20 +76,32 @@ function click(){
         var removeComms = cloneArr.join('');
         globalArray.pop();
         //need to show entries leading upto last delete
-        document.querySelector('#selections').innerHTML = removeComms;
+        var del = buttonInt.trim();
+        return del;
+
       };
     };
 
 
     displayInput()
 
-      function calcLogic(){
+    //deletes repeating html on topheader due to calling displayInput()
 
+
+      function calcLogic(){
+        // never DO THIS AGAIN, call an important function twice;
+        //creates duplication of logic; mess to contain
       var buttonStr = displayInput();
+
+      // function duplicateString():
+      var callDs = removeDupStr();
+      //chain the replace to domstring at beginning to make it work
+
       // calculator logic
-      if(buttonStr !== 'C' && 'del'){
+      if(buttonStr !== 'C' && buttonStr !== 'del'){
         globalArray.push(buttonStr);
         console.log(globalArray);
+        console.log(cloneArr)
         var convertString = globalArray.toString();
         //figure out what's the logic behind replace; removes spaces in between int & str
         var removeSpace = convertString.replace(/,/g, '');
@@ -104,12 +121,51 @@ function click(){
           };
           empty()
           i++;
-        }
+
+      }else if(buttonStr === 'del'){
+
+          // if it can evaluate, goes here (no operator in the end:),
+          //ends with number; mathjs throws exception if not number
+          //just need if - then to trigger this.
+
+        var convertCloneString = cloneArr.toString();
+        var trimClone = convertCloneString.replace(/,/g, '');
+
+          // logic for operator (+, -, etc) in the end;
+        var convertCloneString = cloneArr.toString();
+        var trimClone = convertCloneString.replace(/,/g, '');
+
+        //if it throws error then start code below
+        var trimLength = trimClone.length
+        var cloneMath = trimClone.slice(0, trimLength -1);
+        console.log('2l:'+ cloneMath);
+        console.log('3l:' + globalArray);
+
+        var cloneUpdate = math.eval(cloneMath);
+        // once evaluated; add to bottom header
+        document.querySelector('#selections').innerHTML = trimClone;
+        document.querySelector('#answer').innerHTML = cloneUpdate;
+        //push last operator back to globalarray, or else logic breaks down
+        var lastElemMath = trimClone.slice(-1);
+        globalArray.push(lastElemMath);
+        i++;
+       };
       };
       calcLogic()
-    })
-    })
-  }
-}
+    });
+   });
+  };
+};
 
 click()
+
+// print inner html at [1]
+//removes last element within html dom
+function removeDupStr(){
+  var domString = document.querySelector('#selections').innerHTML;
+  var dsLength = domString.length
+  var num = domString.slice(0,dsLength - 1);
+  return domString = document.querySelector('#selections').innerHTML = num;
+}
+
+removeDupStr()
